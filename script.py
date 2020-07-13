@@ -1,5 +1,4 @@
 import utils
-# import module random
 import random
 
 print('Lets Play Rock Paper Scissors!')
@@ -9,7 +8,7 @@ print('Choose Hand: (0: Rock, 1: Paper, 2: Scissors)')
 player_hand = int(input('Enter Number (0-2): '))
 
 if utils.validate(player_hand):
-    # Tetapkan nomor acak antara 0 dan 2 ke computer_hand menggunakan randint
+    # Set random value between 0 and 2 to computer_hand using randint
     computer_hand = random.randint(0,2)
     
     utils.print_hand(player_hand, player_name)
